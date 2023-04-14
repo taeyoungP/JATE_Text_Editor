@@ -24,9 +24,20 @@ export default class {
 
     // When the editor is ready, set the value to whatever is stored in indexeddb.
     // Fall back to localStorage if nothing is stored in indexeddb, and if neither is available, set the value to header.
-    getDb().then((data) => {
+    /*getDb().then((data) => {
       this.editor.setValue(data.content || localData || header);
-    });
+    });*/
+    getDb()
+      .then((data) => {
+        try {
+          this.editor.setValue(data.content || localData || header);
+        } catch (error) {
+          console.error(error);
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
 
     this.editor.on('change', () => {
       localStorage.setItem('content', this.editor.getValue());
