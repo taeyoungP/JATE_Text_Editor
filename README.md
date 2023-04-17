@@ -1,6 +1,6 @@
 # J.A.T.E Text Editor using Progressive Web Applications (PWA)
 
-## Your Task
+## Task
 
 The task for this project is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
 
@@ -49,7 +49,7 @@ THEN I should have proper build scripts for a webpack application
 * A link to deployed application(Heroku): https://warm-peak-56584.herokuapp.com/
 
 * How to Use:
-  * This page is a progressive web application and can be installed to user's pc. Click install button on the page or button next url to install the application.
+  * This page is a progressive web application and can be installed to user's pc. Click install button on the page or button next to address bar of the browser to install the application.
     ![app-example](./assets/app-example.png)
   * The content of editor will be saved when it losts its focus. In other words, while text cursor is blinking, editor is still editing the text. To save text content, click outside of editor so the text cursor isn't blinking. 
   * Editor can be used online and offline.
