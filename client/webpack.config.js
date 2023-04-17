@@ -27,7 +27,7 @@ module.exports = () => {
         swDest: './src-sw.js',
       }),
       new WebpackPwaManifest({
-        // TODO: Create a manifest.json:
+        // Create a manifest.json:
         name: 'JATE Text Editor',
         short_name: 'JATE',
         description: 'JATE Text Editor, edit your text!',

@@ -27,6 +27,7 @@ export default class {
     /*getDb().then((data) => {
       this.editor.setValue(data.content || localData || header);
     });*/
+    // data.content to get only "content" value of the data. {id: 1, content: [content]}
     getDb()
       .then((data) => {
         try {
